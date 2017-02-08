@@ -12,8 +12,7 @@ div#bg-image {
   background-image: url(../../img/limo_edited.jpg);
   height: 100vh;
   background-size: cover;
-  filter: blur(0.3em);
-  filter: grayscale(100%); }
+  filter: brightness(0.8) blur(0.3em) grayscale(100%); }
 
 header {
   height: 100vh;
@@ -43,4 +42,4 @@ a {
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   transition: all 300ms;
-  background: #ff4136; }
+  background: #D11919; }

@@ -10,6 +10,7 @@ $lime: #01ff70
 $yellow: #ffdc00
 $orange: #ff851b
 $red: #ff4136
+$sexyred: #D11919
 $fuchsia: #f012be
 $purple: #b10dc9
 $maroon: #85144b
@@ -33,8 +34,7 @@ div#bg-image
     background-image: url(../../img/limo_edited.jpg)
     height: 100vh
     background-size: cover
-    filter: blur(.3em)
-    filter: grayscale(100%)
+    filter: brightness(.8) blur(.3em) grayscale(100%)
 
 header
     height: 100vh
@@ -63,4 +63,4 @@ a
     letter-spacing: .1em
     border-radius: .25em
     +transition(all 300ms)
-    background: $red
+    background: $sexyred
