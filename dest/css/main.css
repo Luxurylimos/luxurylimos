@@ -1,12 +1,14 @@
 h1, h4 {
-  margin: 0; }
+  margin: 0 0 .5em 0; }
 
-h1 {
-  font-size: 5rem; }
+div#luxury, div#limo {
+  font-size: 5rem;
+  font-family: Courgette, cursive; }
 
 h4 {
   font-size: 2rem;
-  margin-bottom: .4em; }
+  margin-bottom: .4em;
+  font-family: Roboto, sans-serif; }
 
 div#bg-image {
   background-image: url(../../img/limo_edited.jpg);
@@ -32,9 +34,10 @@ p {
 
 a {
   display: inline-block;
+  font-family: Roboto, sans-serif;
   margin: .5em 0;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.5em;
   color: #fff;
   padding: 1em 2em;
   letter-spacing: .1em;
