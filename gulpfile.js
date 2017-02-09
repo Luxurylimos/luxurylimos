@@ -5,22 +5,22 @@ var browserSync = require('browser-sync').create();
 gulp.task('styles', function() {
     gulp.src('sass/**/*.sass')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./dest/css/'))
+        .pipe(gulp.dest('./docs/css/'))
         .pipe(browserSync.stream());
 });
 gulp.task('html', function(){
     gulp.src('*.html')
-        .pipe(gulp.dest('./dest/'));
+        .pipe(gulp.dest('./docs/'));
 });
 gulp.task('img', function() {
     gulp.src('img/*.jpg')
-        .pipe(gulp.dest('./dest/img/'));
+        .pipe(gulp.dest('./docs/img/'));
 });
 
 
 gulp.task('browser-sync', ['styles', 'html', 'img'], function(){
     browserSync.init({
-        server: "./dest" 
+        server: "./docs" 
     });
 
     gulp.watch('img/*.jpg', ['img']);
