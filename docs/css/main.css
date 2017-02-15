@@ -11,7 +11,7 @@ h4 {
   font-family: Roboto, sans-serif; }
 
 div#bg-image {
-  background-image: url(../../img/limo_edited.jpg);
+  background-image: url(../img/limo_edited.jpg);
   height: 100vh;
   background-size: cover;
   filter: brightness(0.8) blur(0.3em) grayscale(100%); }

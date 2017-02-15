@@ -20,7 +20,10 @@ gulp.task('img', function() {
 
 gulp.task('browser-sync', ['styles', 'html', 'img'], function(){
     browserSync.init({
-        server: "./docs" 
+        server: "./docs" ,
+        routes: {
+        "/luxurylimos": "docs"
+        }
     });
 
     gulp.watch('img/*.jpg', ['img']);
